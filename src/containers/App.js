@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 
 class App extends Component {
@@ -48,13 +50,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <form onSubmit ={this.signUpHandler}>
-          <label>Email</label>
-          <input type="email" name="email" onChange={this.inputChangeHandle}/>
-          <label>Password</label>
-          <input type="password" name ="password" onChange={this.inputChangeHandle}/>
-          <input type="submit"  value="Submit" />
-        </form>
+
       </div>
     );
   };
